@@ -1,10 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
+// IOs: this view will be mapped to UIView
+// Android: View -> AndroidView
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text>Hello Raf!</Text>
       <StatusBar style="auto" />
     </View>
   );
