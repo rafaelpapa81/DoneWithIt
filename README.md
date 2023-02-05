@@ -10,6 +10,30 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 pip install foobar
 ```
 
+Verify if Node.js version is above 12
+
+```bash
+node -v
+```
+
+Install Expo client
+
+```bash
+npm -i -g expo-cli
+```
+
+Create the Expo Project
+
+```bash
+expo init DoneWithIt
+```
+
+Select blank a minimal app as clean as an empty canvas
+
+```bash
+> blank
+```
+
 ## Usage
 
 ```python
