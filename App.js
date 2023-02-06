@@ -18,7 +18,11 @@ export default function App() {
             }} 
         />
       </TouchableOpacity>
-      <Button title='Click Me' onPress={handlePress}/>
+      <Button
+        color='orange' 
+        title='Click Me' 
+        onPress={handlePress}
+      />
       
       <StatusBar style="auto" />
     </SafeAreaView>
