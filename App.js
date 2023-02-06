@@ -10,10 +10,28 @@ export default function App() {
   return (
     <View 
       style={{
-        backgroundColor: "dodgerblue",
-        flex: 0.5,
+        backgroundColor: "#fff",
+        flex: 1,
       }}
     >
+      <View 
+        style={{
+          backgroundColor: "dodgerblue",
+          flex: 1,
+        }}
+      />
+      <View 
+        style={{
+          backgroundColor: "gold",
+          flex: 1,
+        }}
+      />
+      <View 
+        style={{
+          backgroundColor: "tomato",
+          flex: 1,
+        }}
+      />
       <StatusBar style="auto" />
     </View>
   );
