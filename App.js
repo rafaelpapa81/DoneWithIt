@@ -12,7 +12,8 @@ export default function App() {
       style={{
         backgroundColor: "#fff",
         flex: 1,
-        flexDirection: "row",
+        flexDirection: "row", // horizontal axis is te main
+        justifyContent: "center", //center obj at main axis
       }}
     >
       <View 
