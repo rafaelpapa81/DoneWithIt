@@ -4,7 +4,7 @@ import { SafeAreaView, StyleSheet, Text, TouchableOpacity, View, Image, SafeArea
 // IOs: this view will be mapped to UIView
 // Android: View -> AndroidView
 export default function App() {
-  const handlePress = () => console.log("Button tapped");
+  const handlePress = () => alert("Button tapped");
 
   return (
     <SafeAreaView style={styles.container}>
