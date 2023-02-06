@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
-import { SafeAreaView, StyleSheet, Text, TouchableOpacity, View, Image, SafeAreaViewBase, Alert, Button, Platform } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, TouchableOpacity, View, Image, SafeAreaViewBase, Alert, Button, Platform} from 'react-native';
+import Constants from 'expo-constants';
 
 // IOs: this view will be mapped to UIView
 // Android: View -> AndroidView
@@ -11,16 +12,7 @@ export default function App() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text>Hello Raf!</Text>
-      <TouchableOpacity onPress={() => console.log("Image tapped")}>
-        <Image 
-          source={{
-            width: 200,
-            height: 300, 
-            uri: "https://picsum.photos/200/300",
-            }} 
-        />
-      </TouchableOpacity>
+      
       <Button
         color='orange' 
         title='Click Me' 
@@ -38,6 +30,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     // alignItems: 'center',
     // justifyContent: 'center',
-    paddingTop: Platform.OS === 'android' ? 20:0,
+    paddingTop: Platform.OS === 'android' ? Constants.statusBarHeight:0,
   },
 });
