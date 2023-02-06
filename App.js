@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { SafeAreaView, StyleSheet, Text, TouchableOpacity, View, Image, SafeAreaViewBase, Alert, Button } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, TouchableOpacity, View, Image, SafeAreaViewBase, Alert, Button, Platform } from 'react-native';
 
 // IOs: this view will be mapped to UIView
 // Android: View -> AndroidView
@@ -36,7 +36,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1, //the entirely screen
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    // alignItems: 'center',
+    // justifyContent: 'center',
+    paddingTop: Platform.OS === 'android' ? 20:0,
   },
 });
