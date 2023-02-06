@@ -1,10 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
-import { SafeAreaView, StyleSheet, Text, TouchableOpacity, View, Image, SafeAreaViewBase, Button } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, TouchableOpacity, View, Image, SafeAreaViewBase, Alert, Button } from 'react-native';
 
 // IOs: this view will be mapped to UIView
 // Android: View -> AndroidView
 export default function App() {
-  const handlePress = () => alert("Button tapped");
+  const handlePress = () => Alert.alert("My title", "My message", [
+    {text: "Yes", onPress: () => console.log("Yes") },
+    {text: "No", onPress: () => console.log("No")},
+  ]);
 
   return (
     <SafeAreaView style={styles.container}>
