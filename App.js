@@ -13,11 +13,13 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       
-      <Button
-        color='orange' 
-        title='Click Me' 
-        onPress={handlePress}
-      />
+      <View 
+        style={{
+          backgroundColor: "dodgerblue",
+          width: "50%",
+          height: 70,
+        }}
+      ></View>
       
       <StatusBar style="auto" />
     </SafeAreaView>
