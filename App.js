@@ -14,6 +14,7 @@ export default function App() {
         flex: 1,
         flexDirection: "row", // horizontal axis is te main
         justifyContent: "center", //center obj at main axis
+        alignItems: "center", //align items to secondary axis
       }}
     >
       <View 
