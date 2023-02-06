@@ -1,6 +1,19 @@
 import { StatusBar } from 'expo-status-bar';
-import { SafeAreaView, StyleSheet, Text, TouchableOpacity, View, Image, SafeAreaViewBase, Alert, Button, Platform} from 'react-native';
+import {
+  Dimensions, 
+  SafeAreaView, 
+  StyleSheet, 
+  Text, 
+  TouchableOpacity, 
+  View, 
+  Image, 
+  SafeAreaViewBase, 
+  Alert, 
+  Button, 
+  Platform,
+} from 'react-native';
 import Constants from 'expo-constants';
+import { useWindowDimensions } from 'react-native';
 
 // IOs: this view will be mapped to UIView
 // Android: View -> AndroidView
@@ -10,14 +23,20 @@ export default function App() {
     {text: "No", onPress: () => console.log("No")},
   ]);
 
+  //const {height, width, scale, fontScale} = useWindowDimensions();
+  
+  //only different on Android
+  console.log(useWindowDimensions());
+  
+
   return (
     <SafeAreaView style={styles.container}>
       
       <View 
         style={{
           backgroundColor: "dodgerblue",
-          width: "50%",
-          height: 70,
+          width: "100%",
+          height: "30%",
         }}
       ></View>
       
