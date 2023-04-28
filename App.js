@@ -13,22 +13,23 @@ export default function App() {
         backgroundColor: "#fff",
         flex: 1,
         flexDirection: "row", // horizontal axis is te main
-        justifyContent: "center", //center obj at main axis
-        alignItems: "center", //align items to secondary axis
+        justifyContent: "center", // center obj at main axis - it depends of flexDirection. Row is horizontal = x
+        alignItems: "center", // align items to secondary axis. Row is vertical = y
       }}
     >
       <View 
         style={{
           backgroundColor: "dodgerblue",
           width: 100,
-          height: 100,
+          height: 300,
+          alignSelf: "flex-start",
         }}
       />
       <View 
         style={{
           backgroundColor: "gold",
           width: 100,
-          height: 100,
+          height: 200,
         }}
       />
       <View 
