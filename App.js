@@ -29,7 +29,9 @@ export default function App() {
           backgroundColor: "gold",
           width: 100,
           height: 100,  // in Reactive Native position relative is default for all components
-          top: -20, // same as bottom: 20 (relative to its original position, do not affect the layout around)
+          top: 20,
+          left: 20,
+          position: "absolute",
         }}
       />
       <View 
