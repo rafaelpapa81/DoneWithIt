@@ -22,8 +22,10 @@ export default function App() {
       <View 
         style={{
           backgroundColor: "dodgerblue",
-          width: 100,
-          height: 300,
+          flexBasis: 100, // width or height 
+          flexGrow: 1, // same as positive flex, flex: 1
+          //width: 100,
+          height: 100,
         }}
       />
       <View 
@@ -36,20 +38,6 @@ export default function App() {
       <View 
         style={{
           backgroundColor: "tomato",
-          width: 100,
-          height: 100,
-        }}
-      />
-      <View 
-        style={{
-          backgroundColor: "grey",
-          width: 100,
-          height: 100,
-        }}
-      />
-      <View 
-        style={{
-          backgroundColor: "greenyellow",
           width: 100,
           height: 100,
         }}
