@@ -15,6 +15,8 @@ export default function App() {
         flexDirection: "row", // horizontal axis is te main
         justifyContent: "center", // center obj at main axis - it depends of flexDirection. Row is horizontal = x
         alignItems: "center", // align items to secondary axis. Row is vertical = y
+        alignContent: "center", // alignment of the entire content, not only elements of each line - only works with Wrap
+        flexWrap: "wrap",
       }}
     >
       <View 
@@ -22,19 +24,32 @@ export default function App() {
           backgroundColor: "dodgerblue",
           width: 100,
           height: 300,
-          alignSelf: "flex-start",
         }}
       />
       <View 
         style={{
           backgroundColor: "gold",
           width: 100,
-          height: 200,
+          height: 100,
         }}
       />
       <View 
         style={{
           backgroundColor: "tomato",
+          width: 100,
+          height: 100,
+        }}
+      />
+      <View 
+        style={{
+          backgroundColor: "grey",
+          width: 100,
+          height: 100,
+        }}
+      />
+      <View 
+        style={{
+          backgroundColor: "greenyellow",
           width: 100,
           height: 100,
         }}
